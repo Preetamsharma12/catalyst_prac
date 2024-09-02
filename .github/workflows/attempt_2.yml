@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: run pthon script
-        run: python PyFolder/test1.py
+        run: python PyFolder/parse_pgdump.py
