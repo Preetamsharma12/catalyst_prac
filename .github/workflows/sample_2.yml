@@ -28,6 +28,6 @@ jobs:
       - name: run pthon script
         run: |
           python -m pip install requests
-          python samplescript.py
+          python PyFolder/test1.py
 
   
