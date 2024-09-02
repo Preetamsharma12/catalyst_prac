@@ -1,9 +1,6 @@
 name: Sample 2 workflow
 
 on:
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
