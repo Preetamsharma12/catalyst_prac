@@ -1,0 +1,13 @@
+name: attempt 2 workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-python-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run pthon script
+        run: python PyFolder/test1.py
