@@ -1,0 +1,11 @@
+name: hello-world
+on:
+  workflow_dispatch:
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: |
+          echo "Hello World!"
+          pg_dump -h postgres-catalyst-dev.managed-solutions.cloud.ibm.com -p 31747 -d catalyst -U cat_admin -F tar > raw_dump.tar
